@@ -28,7 +28,7 @@
 - (void)setUpButton {
     
     button.backgroundColor = [UIColor blueColor];
-    button.layer.cornerRadius = 10;
+    button.layer.cornerRadius = 20;
     [button setTitle:@("Trigger for modal") forState: normal];
     [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     button.translatesAutoresizingMaskIntoConstraints = NO;
@@ -57,7 +57,7 @@
         [button.centerXAnchor constraintEqualToAnchor: self.centerXAnchor ],
         [button.centerYAnchor constraintEqualToAnchor: self.centerYAnchor] ,
         [button.widthAnchor constraintEqualToConstant: 200 ],
-        [button.heightAnchor  constraintEqualToConstant:30]
+        [button.heightAnchor  constraintEqualToConstant:40]
      ]
     ];
 }
