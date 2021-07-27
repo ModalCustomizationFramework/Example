@@ -7,13 +7,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "SimpleView.h"
+#import "TriggerButtonView.h"
 
-@interface SimpleView ()
+@interface TriggerButtonView ()
 
 @end
 
-@implementation SimpleView
+@implementation TriggerButtonView
 
 // synthesize set a get e set method to the variable
 @synthesize button;
@@ -28,7 +28,7 @@
 - (void)setUpButton {
     
     button.backgroundColor = [UIColor blueColor];
-    button.layer.cornerRadius = 10;
+    button.layer.cornerRadius = 20;
     [button setTitle:@("Trigger for modal") forState: normal];
     [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     button.translatesAutoresizingMaskIntoConstraints = NO;
@@ -36,8 +36,6 @@
 
 -(void)buttonAction:(id)sender {
     [self.delegate buttonAction];
-  // sender is the object that was tapped, in this case its the button.
-    NSLog(@"Button is tapped");
 }
 
 
@@ -59,7 +57,7 @@
         [button.centerXAnchor constraintEqualToAnchor: self.centerXAnchor ],
         [button.centerYAnchor constraintEqualToAnchor: self.centerYAnchor] ,
         [button.widthAnchor constraintEqualToConstant: 200 ],
-        [button.heightAnchor  constraintEqualToConstant:30]
+        [button.heightAnchor  constraintEqualToConstant:40]
      ]
     ];
 }
@@ -70,8 +68,5 @@
     }
     return self;
 }
-
-
-
 
 @end

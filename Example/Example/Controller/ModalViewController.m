@@ -5,13 +5,13 @@
 //  Created by Jhennyfer Rodrigues de Oliveira on 26/07/21.
 //
 
-#import "ModalViewControllerTest.h"
+#import "ModalViewController.h"
 
-@implementation ModalViewControllerTest
+@implementation ModalViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = UIColor.orangeColor;
+    self.view.backgroundColor = UIColor.whiteColor;
 }
 
 @end
