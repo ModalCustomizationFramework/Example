@@ -18,7 +18,7 @@ Esse é um projeto de exemplo desenvolvido em Objective-C, usando a arquitetura 
 - ModalViewController - Controller que configura o conteúdo da tela de modal.
 
 
-> Quando você executar o projeto ele não irá apresentar a próxima tela como modal, pois ainda o framework ainda não está integrado. Siga o [tutorial](https://github.com/ModalCustomizationFramework/ModalCustomizationFramework) para fazer a integração.
+> Quando você executar o projeto ele não irá apresentar a próxima tela como modal, pois o framework ainda não está integrado. Siga o [tutorial](https://github.com/ModalCustomizationFramework/ModalCustomizationFramework) para fazer a integração.
 
 ## Preview do projeto de exemplo
 
