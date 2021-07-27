@@ -5,14 +5,14 @@
 //  Created by Jhennyfer Rodrigues de Oliveira on 22/07/21.
 //
 
-#import "ViewController.h"
+#import "TriggerButtonViewController.h"
 //#import "SimpleView.h"
 
-@interface ViewController ()
+@interface TriggerButtonViewController ()
 
 @end
 
-@implementation ViewController 
+@implementation TriggerButtonViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -20,25 +20,17 @@
 
 - (void)loadView {
     [super loadView];
-    SimpleView *simpleView = [[SimpleView alloc] init];
-    simpleView.viewController = [[ViewController alloc] init];
-    simpleView.delegate = self;
-    self.view = simpleView;
+    TriggerButtonView *triggerButtonView = [[TriggerButtonView alloc] init];
+    triggerButtonView.viewController = [[TriggerButtonViewController alloc] init];
+    triggerButtonView.delegate = self;
+    self.view = triggerButtonView;
 }
 
 - (void)buttonAction {
-    NSLog(@"delegate funciona");
     UINavigationController *navigationController = UINavigationController.new;
-    ModalViewControllerTest *modalViewControllerTest = ModalViewControllerTest.new;
-    [FrameworkHelper.sharedInstance setBlurStyle:lightMode];
-    navigationController.viewControllers = @[modalViewControllerTest];
-    self.modalTransitioningDelegate = [[ModalTransitioningDelegate alloc] initWithViewController:self
-                                                                          presentingViewController: navigationController
-                                                                          modalScaleState:ModalScaleStateShort isExpansive:NO
-                                       ];
- 
+    ModalViewController *modalViewController = ModalViewController.new;
+    navigationController.viewControllers = @[modalViewController];
     navigationController.modalPresentationStyle = UIModalPresentationCustom;
-    navigationController.transitioningDelegate = self.modalTransitioningDelegate;
     [self presentViewController:navigationController animated:YES completion:nil];
     
 }
