@@ -8,6 +8,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface ModalViewControllerTest : UIViewController
+@interface ModalViewController : UIViewController
 
 @end

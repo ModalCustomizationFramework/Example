@@ -6,11 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SimpleView.h"
-#import "ModalViewControllerTest.h"
-@interface ViewController : UIViewController <ButtonDelegate>
+#import "TriggerButtonView.h"
+#import "ModalViewController.h"
+@interface TriggerButtonViewController : UIViewController <ButtonDelegate>
 
-@property (nonatomic,retain) SimpleView *simpleView;
-@property (strong, nonatomic) ModalTransitioningDelegate * modalTransitioningDelegate;
+@property (nonatomic,retain) TriggerButtonView *triggerButtonView;
+
 @end
 

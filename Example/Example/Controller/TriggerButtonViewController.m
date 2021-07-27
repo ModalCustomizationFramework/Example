@@ -5,14 +5,14 @@
 //  Created by Jhennyfer Rodrigues de Oliveira on 22/07/21.
 //
 
-#import "ViewController.h"
+#import "TriggerButtonViewController.h"
 //#import "SimpleView.h"
 
-@interface ViewController ()
+@interface TriggerButtonViewController ()
 
 @end
 
-@implementation ViewController 
+@implementation TriggerButtonViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -20,29 +20,38 @@
 
 - (void)loadView {
     [super loadView];
-    SimpleView *simpleView = [[SimpleView alloc] init];
-    simpleView.viewController = [[ViewController alloc] init];
-    simpleView.delegate = self;
-    self.view = simpleView;
+    TriggerButtonView *triggerButtonView = [[TriggerButtonView alloc] init];
+    triggerButtonView.viewController = [[TriggerButtonViewController alloc] init];
+    triggerButtonView.delegate = self;
+    self.view = triggerButtonView;
 }
 
 - (void)buttonAction {
-    NSLog(@"delegate funciona");
-    UINavigationController *navigationController = UINavigationController.new;
-    ModalViewControllerTest *modalViewControllerTest = ModalViewControllerTest.new;
-    [FrameworkHelper.sharedInstance setBlurStyle:lightMode];
-    navigationController.viewControllers = @[modalViewControllerTest];
-    self.modalTransitioningDelegate = [[ModalTransitioningDelegate alloc] initWithViewController:self
-                                                                          presentingViewController: navigationController
-                                                                          modalScaleState:ModalScaleStateShort isExpansive:NO
-                                       ];
- 
+    UINavigationController *navigationController = [self configureNavigationController];
+    ModalViewController *modalViewController = ModalViewController.new;
+    navigationController.viewControllers = @[modalViewController];
     navigationController.modalPresentationStyle = UIModalPresentationCustom;
-    navigationController.transitioningDelegate = self.modalTransitioningDelegate;
+    // Configure navigationItems
+    [self configureNavigationItems:modalViewController];
+    modalViewController.navigationItem.title = @"Title";
     [self presentViewController:navigationController animated:YES completion:nil];
     
 }
 
+- (void)configureNavigationItems:(UIViewController*)controller {
+    controller.navigationItem.title = @"Title";
+    controller.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Left Button" style:UIBarButtonItemStylePlain target:self action:nil];
+    controller.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Right Button" style:UIBarButtonItemStylePlain target:self action:nil];
+}
 
+- (UINavigationController*)configureNavigationController {
+    // Configuring Navigation Bar
+    UINavigationController *navigationController = UINavigationController.new;
+    navigationController.navigationBar.layer.cornerRadius = 10;
+    navigationController.navigationBar.clipsToBounds = true;
+    navigationController.navigationBar.layer.maskedCorners = kCALayerMinXMinYCorner | kCALayerMaxXMinYCorner;
+
+    return navigationController;
+}
 
 @end
