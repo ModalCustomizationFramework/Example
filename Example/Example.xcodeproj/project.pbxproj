@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		EF75E0D026B0507C00A52B13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF75E0CF26B0507C00A52B13 /* AppDelegate.m */; };
 		EF75E0D326B0507C00A52B13 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF75E0D226B0507C00A52B13 /* SceneDelegate.m */; };
-		EF75E0D626B0507C00A52B13 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF75E0D526B0507C00A52B13 /* ViewController.m */; };
-		EF75E0D926B0507C00A52B13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF75E0D726B0507C00A52B13 /* Main.storyboard */; };
 		EF75E0DB26B0508000A52B13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF75E0DA26B0508000A52B13 /* Assets.xcassets */; };
 		EF75E0DE26B0508000A52B13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF75E0DC26B0508000A52B13 /* LaunchScreen.storyboard */; };
 		EF75E0E126B0508000A52B13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF75E0E026B0508000A52B13 /* main.m */; };
 		EF75E0EB26B0508000A52B13 /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF75E0EA26B0508000A52B13 /* ExampleTests.m */; };
 		EF75E0F626B0508000A52B13 /* ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF75E0F526B0508000A52B13 /* ExampleUITests.m */; };
+		EF75E10926B054EA00A52B13 /* TriggerButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF75E10626B054EA00A52B13 /* TriggerButtonViewController.m */; };
+		EF75E10A26B054EA00A52B13 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF75E10726B054EA00A52B13 /* ModalViewController.m */; };
+		EF75E10E26B0558100A52B13 /* TriggerButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF75E10C26B0558100A52B13 /* TriggerButtonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +42,6 @@
 		EF75E0CF26B0507C00A52B13 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EF75E0D126B0507C00A52B13 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		EF75E0D226B0507C00A52B13 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		EF75E0D426B0507C00A52B13 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EF75E0D526B0507C00A52B13 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EF75E0D826B0507C00A52B13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF75E0DA26B0508000A52B13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF75E0DD26B0508000A52B13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF75E0DF26B0508000A52B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +52,12 @@
 		EF75E0F126B0508000A52B13 /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF75E0F526B0508000A52B13 /* ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleUITests.m; sourceTree = "<group>"; };
 		EF75E0F726B0508000A52B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF75E10526B054EA00A52B13 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		EF75E10626B054EA00A52B13 /* TriggerButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriggerButtonViewController.m; sourceTree = "<group>"; };
+		EF75E10726B054EA00A52B13 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		EF75E10826B054EA00A52B13 /* TriggerButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriggerButtonViewController.h; sourceTree = "<group>"; };
+		EF75E10C26B0558100A52B13 /* TriggerButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriggerButtonView.m; sourceTree = "<group>"; };
+		EF75E10D26B0558100A52B13 /* TriggerButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriggerButtonView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +108,9 @@
 		EF75E0CD26B0507C00A52B13 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				EF75E0CE26B0507C00A52B13 /* AppDelegate.h */,
-				EF75E0CF26B0507C00A52B13 /* AppDelegate.m */,
-				EF75E0D126B0507C00A52B13 /* SceneDelegate.h */,
-				EF75E0D226B0507C00A52B13 /* SceneDelegate.m */,
-				EF75E0D426B0507C00A52B13 /* ViewController.h */,
-				EF75E0D526B0507C00A52B13 /* ViewController.m */,
-				EF75E0D726B0507C00A52B13 /* Main.storyboard */,
+				EF75E10B26B0557300A52B13 /* View */,
+				EF75E10426B054CF00A52B13 /* Controller */,
+				EF75E10326B0508900A52B13 /* Configuration */,
 				EF75E0DA26B0508000A52B13 /* Assets.xcassets */,
 				EF75E0DC26B0508000A52B13 /* LaunchScreen.storyboard */,
 				EF75E0DF26B0508000A52B13 /* Info.plist */,
@@ -135,6 +135,37 @@
 				EF75E0F726B0508000A52B13 /* Info.plist */,
 			);
 			path = ExampleUITests;
+			sourceTree = "<group>";
+		};
+		EF75E10326B0508900A52B13 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				EF75E0CE26B0507C00A52B13 /* AppDelegate.h */,
+				EF75E0CF26B0507C00A52B13 /* AppDelegate.m */,
+				EF75E0D126B0507C00A52B13 /* SceneDelegate.h */,
+				EF75E0D226B0507C00A52B13 /* SceneDelegate.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		EF75E10426B054CF00A52B13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF75E10526B054EA00A52B13 /* ModalViewController.h */,
+				EF75E10726B054EA00A52B13 /* ModalViewController.m */,
+				EF75E10826B054EA00A52B13 /* TriggerButtonViewController.h */,
+				EF75E10626B054EA00A52B13 /* TriggerButtonViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF75E10B26B0557300A52B13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF75E10D26B0558100A52B13 /* TriggerButtonView.h */,
+				EF75E10C26B0558100A52B13 /* TriggerButtonView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +272,6 @@
 			files = (
 				EF75E0DE26B0508000A52B13 /* LaunchScreen.storyboard in Resources */,
 				EF75E0DB26B0508000A52B13 /* Assets.xcassets in Resources */,
-				EF75E0D926B0507C00A52B13 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF75E0D626B0507C00A52B13 /* ViewController.m in Sources */,
 				EF75E0D026B0507C00A52B13 /* AppDelegate.m in Sources */,
 				EF75E0E126B0508000A52B13 /* main.m in Sources */,
+				EF75E10E26B0558100A52B13 /* TriggerButtonView.m in Sources */,
+				EF75E10A26B054EA00A52B13 /* ModalViewController.m in Sources */,
+				EF75E10926B054EA00A52B13 /* TriggerButtonViewController.m in Sources */,
 				EF75E0D326B0507C00A52B13 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,14 +337,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EF75E0D726B0507C00A52B13 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EF75E0D826B0507C00A52B13 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EF75E0DC26B0508000A52B13 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
