@@ -7,13 +7,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "SimpleView.h"
+#import "TriggerButtonView.h"
 
-@interface SimpleView ()
+@interface TriggerButtonView ()
 
 @end
 
-@implementation SimpleView
+@implementation TriggerButtonView
 
 // synthesize set a get e set method to the variable
 @synthesize button;
@@ -36,8 +36,6 @@
 
 -(void)buttonAction:(id)sender {
     [self.delegate buttonAction];
-  // sender is the object that was tapped, in this case its the button.
-    NSLog(@"Button is tapped");
 }
 
 
@@ -70,8 +68,5 @@
     }
     return self;
 }
-
-
-
 
 @end

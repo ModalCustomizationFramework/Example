@@ -13,8 +13,8 @@
 // ... other methods here
 @end
 
-@class SimpleView;
-@interface SimpleView : UIView 
+@class TriggerButtonView;
+@interface TriggerButtonView : UIView 
 
 @property (strong, nonatomic) UIButton * button;
 @property (weak, nonatomic) id <ButtonDelegate> delegate;
