@@ -20,6 +20,12 @@ Esse é um projeto de exemplo desenvolvido em Objective-C, usando a arquitetura 
 
 > Quando você executar o projeto ele não irá apresentar a próxima tela como modal, pois o framework ainda não está integrado. Siga o tutorial abaixo para fazer a integração.
 
+## Como Integrar o framework ao projeto?
+
+Para acessar o framework por meio do SPM, lá no Xcode em File -> Swift Packages -> Add Package Dependency,
+adicione o link (https://github.com/ModalCustomizationFramework/ModalCustomizationSPM.git) na barra de pesquisa e aperte em **next**,
+selecione **Branch** e aperte em **next**
+
 ## Tutorial Objective-C
 1. Faça o download do [projeto de exemplo](https://github.com/ModalCustomizationFramework/Example)
 2. Navegue até o arquivo nomeado **TriggerButtonViewController.h**
