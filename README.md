@@ -1,4 +1,4 @@
-# Projeto de exemplo para utilização do framework Modal Customization
+# Projeto de exemplo para utilização do framework Modal Customization (Objective-C)
 Esse é um projeto de exemplo desenvolvido em Objective-C, usando a arquitetura MVC para mostrar o funcionamento do framework [Modal Customization](https://github.com/ModalCustomizationFramework/ModalCustomizationFramework). 
 
 ## Estrutura do projeto
