@@ -27,15 +27,33 @@
 }
 
 - (void)buttonAction {
+    // Instancie aqui a classe ModalCustomization.
+    
+    
+    
+    // Escreva aqui todas as customizações da modal chamando os metodos da ModalCustomization.
+    
+    
+    
+    // Instancie aqui a classe ModalTransitioningDelegate atribuindo o objeto retornado para o **modalTransitioningDelegate** da controller.
+    
+    
+    
+    
     UINavigationController *navigationController = [self configureNavigationController];
     ModalViewController *modalViewController = ModalViewController.new;
     navigationController.viewControllers = @[modalViewController];
     navigationController.modalPresentationStyle = UIModalPresentationCustom;
+    
     // Configure navigationItems
     [self configureNavigationItems:modalViewController];
-    modalViewController.navigationItem.title = @"Title";
-    [self presentViewController:navigationController animated:YES completion:nil];
     
+    // Atribua aqui o modal transitioning delegate instanciado no passo 7 ao transitionDelegate da navigationController.
+    
+    
+    
+    
+    [self presentViewController:navigationController animated:YES completion:nil];
 }
 
 - (void)configureNavigationItems:(UIViewController*)controller {
