@@ -32,7 +32,7 @@ Esse é um projeto de exemplo desenvolvido em Objective-C, usando a arquitetura 
 ~~~objective-c
  - (void)buttonAction {}
 ~~~
-5. Instancie a classe **ModalCustomization** para ter acesso aos métodos que irão customizar a modal na primeira linha da função 
+5. Na primeira linha da função, instancie a classe **ModalCustomization** para ter acesso aos métodos que irão customizar a modal 
 ~~~objective-c
  ModalCustomization *modalCustomization = ModalCustomization.new;
 ~~~
@@ -48,28 +48,17 @@ Esse é um projeto de exemplo desenvolvido em Objective-C, usando a arquitetura 
     // Definir se a modal expande quando o usuário arrasta para cima ou se permanece com a mesma altura / valor padrão : NO
     [modalCustomization setIsModalExpansive:YES];
 ~~~
-7. Instancie a classe ModalTransitioningDelegate atribuindo o objeto retornado para o **modalTransitioningDelegate** da controller, que corresponde a propriedade criada no passo 3.
+7. Na próxima linha, ainda dentro da função, instancie a classe ModalTransitioningDelegate atribuindo o objeto retornado para o **modalTransitioningDelegate** da controller, que corresponde a propriedade criada no passo 3.
 ~~~objective-c
     self.modalTransitioningDelegate = [[ModalTransitioningDelegate alloc] initWithViewController:self
                                                                           presentingViewController: navigationController];
 ~~~
 
-8. A ViewController da modal que será apresentada está contida em uma Navigation Controller, então por meio dela vamos colocar o modo de 
-   apresentação da modal para custom. O transitioning delegate será responsável por instanciar a view que será apresentada por meio de uma
-   Presentation Controller.
+8. Adicione a próxima linha de código logo abaixo da linha **[self configureNavigationItems:modalViewController]**;O transitioning delegate será responsável por instanciar a view que será apresentada por meio de uma Presentation Controller(responsável por animações, altura da modal, blur effect e gestures).
    
 ~~~objective-c
-    navigationController.modalPresentationStyle = UIModalPresentationCustom;
     navigationController.transitioningDelegate = self.modalTransitioningDelegate;
 ~~~
-
-    
-
-## Preview do projeto sem integração com o framework
-
-https://user-images.githubusercontent.com/52433246/127242049-527ad72c-13f1-49d3-8782-587c424a510f.mp4
-
-## Preview do projeto com integração com o framework
 
 
 
