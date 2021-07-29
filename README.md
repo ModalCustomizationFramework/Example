@@ -32,7 +32,7 @@ Esse é um projeto de exemplo desenvolvido em Objective-C, usando a arquitetura 
 ~~~objective-c
  - (void)buttonAction {}
 ~~~
-5. Instancie a classe **ModalCustomization** para ter acesso aos métodos que irão customizar a modal na primeira linha da função 
+5. Na primeira linha da função, instancie a classe **ModalCustomization** para ter acesso aos métodos que irão customizar a modal 
 ~~~objective-c
  ModalCustomization *modalCustomization = ModalCustomization.new;
 ~~~
